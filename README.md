@@ -1,2 +1,2 @@
 # RockPaperScissors
-Rock paper scissors game againts the Computer
+Rock Paper Scissors game againts the Computer. A simple project for practicing JavaScript concepts.
