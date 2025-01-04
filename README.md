@@ -1,2 +1,2 @@
 # RockPaperScissors
-rock paper scissors game against the computer
+Rock paper scissors game againts the Computer
