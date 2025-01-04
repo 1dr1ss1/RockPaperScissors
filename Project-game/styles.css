@@ -1,0 +1,170 @@
+body {
+  background-color: black !important;
+  height: 100vh;
+}
+h1,
+h3,
+h5 {
+  color: white;
+}
+header > h1 {
+  text-align: center;
+  color: white !important;
+  padding-top: 50px;
+}
+h5 {
+  font-size: 35px;
+  padding: 10px;
+}
+h3 {
+  font-size: 35px !important;
+  margin-top: 30px !important;
+}
+.custom-header-font {
+  font-family: "Press Start 2P", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.container {
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hand-containers {
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 250px;
+  margin: 10px;
+  width: 250px !important;
+  cursor: pointer;
+}
+.hand-containers:hover {
+  background-color: white;
+  color: black;
+}
+.result-container {
+  text-align: center;
+  color: white;
+}
+span {
+  color: white;
+  margin-top: 20px;
+  position: relative;
+  top: 30px;
+}
+
+.scoreboard {
+  margin: auto;
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+.wins-score {
+  color: green;
+  font-size: 30px;
+  font-weight: 600;
+}
+.losses-score {
+  color: red;
+  font-size: 30px;
+  font-weight: 600;
+}
+.ties-score {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+.result-p {
+  padding-top: 10px;
+  height: 30px;
+  font-size: 20px;
+}
+
+/********************************** Small Screens ****************************************/
+@media only screen and (max-width: 480px) {
+  header > h1 {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  h3 {
+    font-size: 17px !important;
+    margin-top: 5px !important;
+  }
+  .game-img {
+    width: 60px;
+    height: 60px;
+  }
+  #scissors {
+    position: relative;
+    top: -70px;
+  }
+  #rock,
+  #paper {
+    position: relative;
+    top: 10px;
+  }
+  .container {
+    max-width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 20px;
+  }
+  .hand-containers {
+    backdrop-filter: blur(10px);
+    width: 140px !important;
+    height: 140px !important;
+    margin: 3px 5px 5px 5px;
+    padding: 10px 5px 5px 5px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  /** Footer Scoreboard Style **/
+  .scoreboard {
+    font-size: 20px;
+    height: 70px !important;
+  }
+  .scoreboard > span {
+    font-size: 20px;
+  }
+}
+
+/********************************* Larger mobile screen *****************************/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    height: 55vh;
+    position: relative;
+    top: 20px;
+  }
+  h3 {
+    font-size: 17px !important;
+    padding-top: 10px;
+  }
+  .hand-containers {
+    border-radius: 50%;
+    width: 180px !important;
+    height: 180px;
+    text-align: center;
+    margin: 3px 5px 5px 5px;
+    backdrop-filter: blur(10px);
+  }
+  #scissors {
+    position: relative;
+    top: -100px;
+  }
+  .result-container {
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #scissors {
+    position: relative;
+    top: 0;
+  }
+}
